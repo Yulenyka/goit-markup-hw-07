@@ -1,0 +1,48 @@
+.feature {
+  display: flex;
+  gap: 30px;
+}
+.feature-item {
+  width: 270px;
+
+  &::before {
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #f5f4fa;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  }
+
+  &.icon-antena::before {
+  background-image: url(../images/icon/antenna.svg);
+  }
+
+  &.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut.svg);
+  }
+
+  &.icon-clock::before {
+  background-image: url(../images/icon/clock.svg);
+  }
+
+  &.icon-diagram::before {
+  background-image: url(../images/icon/diagram.svg);
+    }
+}
+
+.feature-item__titlle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-item__text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $fundamental-text-color;
+}
+
