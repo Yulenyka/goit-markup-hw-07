@@ -66,37 +66,17 @@ textarea {
   /* outline: 2px solid tomato; */
 }
 
-.container__titlle {
+.titlle {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-
-    &--transparent {
-      @include transparent;
-  }
-}
-
-.container--footer {
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    gap: 70px;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  &--no-padding {
-  padding-top: 0;
-  }
-
-  &--team {
-  background: $primery-white-color;
-  }
 }
-
 .column__titlle {
   margin-bottom: 20px;
   font-size: 14px;

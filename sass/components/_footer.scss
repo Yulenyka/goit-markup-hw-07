@@ -2,6 +2,15 @@
   padding: 60px 0;
   background-color: $accent-white-color;
 }
+.container__footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 70px;
+}
+.logo__footer {
+  color: $sub-text-color;
+}
 .address {
   margin-top: 20px;
   font-weight: 400;

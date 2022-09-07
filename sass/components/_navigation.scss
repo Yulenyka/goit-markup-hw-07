@@ -1,9 +1,9 @@
-.site-nav {
+.menu {
   @include centeredFlex();
   gap: 50px;
 }
 
-.site-nav__item {
+.menu__item {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -11,7 +11,7 @@
     @include transition(color);
   }
 
-.site-nav__link {
+.menu__link {
   &:hover,
   &:focus,
   &:active {
@@ -61,12 +61,12 @@
   }
 }
 
-.contact-nav {
+.contacts {
   display: flex;
   margin-left: auto;
   gap: 30px;
 }
-.contact-nav__link {
+.contacts__link {
   color: $fundamental-text-color;
 
   @include transition(color);
@@ -78,7 +78,7 @@
   }
 }
 
-.contact-nav__icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 

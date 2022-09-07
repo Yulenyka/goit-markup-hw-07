@@ -1,11 +1,14 @@
 .trend {
+  padding-top: 0;
+}
+.trend-list{
   display: flex;
   gap: 30px;
 }
-.trend-item {
+.trend-list__item {
   position: relative;
-
-  &__groundwork {
+}
+.trend-list__groundwork {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -19,5 +22,4 @@
   text-transform: uppercase;
   padding-top: 27px;
   padding-bottom: 27px;
-}
 }

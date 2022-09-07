@@ -1,10 +1,13 @@
+.project__titlle {
+      @include transparent;
+}
 .project-button {
   @include centeredFlex;
   margin-bottom: 50px;
   gap: 8px;
 }
 
-.project-btn {
+.project-button__btn {
   padding: 6px 22px;
   font-family: inherit;
   font-size: inherit;
@@ -28,8 +31,8 @@
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-
-    &.active {
+}
+.project-button__btn--active {
         padding: 6px 25px;
         color: $secondary-white-color;
         border: none;
@@ -37,16 +40,14 @@
         background-color: $accent-color;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
 }
-
-.project {
+.project-card {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.project-card {
+.project-card__item {
   width: calc((100% - 60px) / 3);
 
   @include transition (box-shadow);
@@ -57,7 +58,7 @@
     }
 }
 
-.project-thumb {
+.project-card__thumb {
   position: relative;
   overflow: hidden;
 
@@ -66,7 +67,7 @@
     }
 }
 
-.project-overlay {
+.project-card__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,13 +80,13 @@
 
   transition: transform $duration $cubic, opacity $duration $cubic;
 
-  .project-card:hover & {
+  .project-card__item:hover & {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-.project-actions {
+.project-card__actions {
   position: absolute;
   display: flex;
 
@@ -98,23 +99,23 @@
 
   @include transition (opacity);
 
-  .project-card:hover & {
+  .project-card__item:hover & {
   opacity: 1;
 }
 }
-.project-content {
+.project-card__content {
   padding: 20px 24px;
   @include borders(#eeeeee);
   border-top: none;
 }
-.project-titlle {
+.project-card__titlle {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: inherit;
 }
-.project-text {
+.project-card__text {
   font-size: 16px;
   line-height: 1.87;
   font-weight: 400;
